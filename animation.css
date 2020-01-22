@@ -1,10 +1,11 @@
 html {
   background-image: url(assets/stars.png);
   background-repeat: repeat-y;
-  background-position: fixed;
+  background-attachment: fixed;
   background-size: 100%;
   width: 4000px;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 *, *before, *:after {
   margin: 0;
@@ -35,15 +36,15 @@ html {
 }
 @-webkit-keyframes move-clouds-back {
   from {background-position:0 0;}
-  to {background-position:10000px 0;}
+  to {background-position:10000px 10000px;}
 }
 @-moz-keyframes move-clouds-back {
   from {background-position:0 0;}
-  to {background-position:10000px 0;}
+  to {background-position:10000px 10000px;}
 }
 @-ms-keyframes move-clouds-back {
   from {background-position: 0;}
-  to {background-position:10000px 0;}
+  to {background-position:10000px 10000px;}
 }
 
 .twinkling, .clouds {
@@ -60,18 +61,21 @@ display:block;
 
 .twinkling{
 background:transparent url(assets/twinkle.png) repeat top center;
-background-size: 50%;
+background-size: 100%;
+background-attachment: fixed;
 z-index:1;
--moz-animation:move-twink-back 10000s linear infinite;
--ms-animation:move-twink-back 10000s linear infinite;
--o-animation:move-twink-back 10000s linear infinite;
--webkit-animation:move-twink-back 10000s linear infinite;
-animation:move-twink-back 10000s linear infinite;
+-moz-animation:move-twink-back 1000s linear infinite;
+-ms-animation:move-twink-back 1000s linear infinite;
+-o-animation:move-twink-back 1000s linear infinite;
+-webkit-animation:move-twink-back 1000s linear infinite;
+animation:move-twink-back 1000s linear infinite;
 }
 
 .clouds{
-  background: url(assets/cloud.png) repeat 0% 0%;
-  background-size: 85%;
+  background: url(assets/cloud.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 100%;
   z-index:3;
   opacity: .60;
 -moz-animation:move-clouds-back 900s linear infinite;
