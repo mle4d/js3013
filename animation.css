@@ -74,7 +74,6 @@ animation:move-twink-back 8000s linear infinite;
 
 .clouds{
   background: url(assets/cloud.png);
-  /* margin-top: -100px; */
   background-attachment: fixed;
   position: fixed;
   overflow-x: hidden; 
