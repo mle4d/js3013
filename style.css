@@ -16,6 +16,8 @@ body {
   width: 110%;
   padding: 100px;
   border: 10px solid rgba(255, 255, 255, 0.543);
+  -webkit-filter: drop-shadow( 0 0 40px #000000);
+  filter: drop-shadow( 0 0 40px #000000);
   overflow-x: scroll;
   opacity: .99;
 }
