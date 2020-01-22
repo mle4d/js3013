@@ -65,11 +65,11 @@ background-attachment: fixed;
 position: fixed;
 overflow-x: hidden;
 z-index:1;
--moz-animation:move-twink-back 1000s linear infinite;
--ms-animation:move-twink-back 1000s linear infinite;
--o-animation:move-twink-back 1000s linear infinite;
--webkit-animation:move-twink-back 1000s linear infinite;
-animation:move-twink-back 1000s linear infinite;
+-moz-animation:move-twink-back 8000s linear infinite;
+-ms-animation:move-twink-back 8000s linear infinite;
+-o-animation:move-twink-back 8000s linear infinite;
+-webkit-animation:move-twink-back 8000s linear infinite;
+animation:move-twink-back 8000s linear infinite;
 }
 
 .clouds{
